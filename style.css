@@ -1,67 +1,82 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-  display: grid;
-  place-items: center;
-  width: 100vw;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  width: 1200px;
-  height: 50px;
-  background-color: rgba(104, 6, 6, 0.598);
- 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 1200px;
+    height: 50px;
+    background-color: rgba(15, 10, 10, 0.783);
 }
+
 .menubar {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 #menuUl {
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
-  list-style: none;
-  padding: 0.4rem;
-  color: rgb(46, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    list-style: none;
+    padding: 0.4rem;
+    color: rgb(164, 178, 83);
 }
-#menuUl li:hover {
-  color: rgb(255, 255, 255);
-  transition: all 700ms;
-}
+
 #menuUl li {
-  transition: all 700ms;
+    transition: all 700ms;
 }
 
 #menuList {
-  font-size: 1.3rem;
-  cursor: pointer;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
+
+#menuList li {
+    font-weight: 300;
+    background-color: rgba(128, 128, 128, 0.226);
+    padding: 0.3rem 1rem;
+    width: 100px;
+    color: black;
+}
+
+#menuList li:hover {
+    font-weight: 200;
+    background-color: rgba(15, 10, 10, 0.783);
+    color: rgb(164, 178, 83);
+}
+
 #menuList2 {
-  background-color: transparent;
-  color: brown;
-}
-#menuList2:hover {
-  background-color: rgba(128, 128, 128, 0.463);
+    background-color: transparent;
+    color: rgb(87, 70, 70);
 }
 
 .menuUl2 {
-  display: block;
-  list-style: none;
-  transform: translateY(-170%);
-  transition: all 700ms;
-  margin-top: 1rem;
-  text-align: center;
+    display: block;
+    opacity: 0;
+    list-style: none;
+    transform: translateY(-50%);
+    transition: all 400ms;
+    margin-top: 1rem;
+    font-size: 15px;
+    text-align: left;
 }
+
 .active {
-  display: block;
-  transform: translatey(0%);
-  transition: all 700ms;
-  text-align: center;
-  margin-top: 1rem;
+    display: block;
+    font-size: 15px;
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 400ms;
 }
